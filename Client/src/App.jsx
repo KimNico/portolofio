@@ -5,6 +5,7 @@ import { Home } from "./views/Home/Home";
 import { Aboutme } from "./views/Aboutme/Aboutme";
 import { Projects } from "./views/Projects/Projects";
 import { Skills } from "./views/Skills/Skills";
+import { Landing } from "./views/Landing/Landing";
 
 
 
@@ -12,15 +13,16 @@ function App() {
 
 
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <div className="App">
    <Routes>
+      <Route exact path="/" element={<Landing/>}/>
       <Route exact path="/home" element ={<Home/>}/>
       <Route exact path="/aboutme" element ={<Aboutme/>}/>
       <Route exact path="/projects" element ={<Projects/>}/>
       <Route exact path="/skills" element ={<Skills/>}/>
 
    </Routes>
-      </main>
+      </div>
 
   )
 }

@@ -1,7 +1,13 @@
 import React from "react";
 import { skill } from "../../data";
+import { NavBar } from "../../components/Navbar/Navbar";
+
+
+
 export function Skills() {
   return (
+    <div>
+        <NavBar/>
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
@@ -27,5 +33,6 @@ export function Skills() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
